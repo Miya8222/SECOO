@@ -1,0 +1,121 @@
+form {
+  height: 460px;
+  width: 380px;
+}
+form .login_tab {
+  position: relative;
+  z-index: 10;
+}
+form .login_tab div {
+  margin: auto;
+  float: left;
+  width: 50%;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  font: normal 18px/20px microsoft yahei;
+  color: #666;
+  margin-bottom: 40px;
+}
+form .login_tab .active {
+  color: #f19108;
+}
+form .QRcode .erweima {
+  width: 192px;
+  height: 192px;
+}
+form .QRcode .erweima img {
+  width: 100%;
+  height: 100%;
+}
+form .QRcode .txt {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-top: 90px;
+}
+form .QRcode .register_change {
+  margin: 30px 0 20px 0;
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+}
+form .form-group {
+  position: relative;
+  font-size: 14px;
+  padding-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+form .form-group .glyphicon-user {
+  display: block;
+  position: absolute;
+  top: 75px;
+  right: 20px;
+}
+form .form-group .glyphicon-phone {
+  display: block;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+form .form-group .remember {
+  font-size: 14px;
+  padding-top: 20px;
+}
+form .form-group .remember span {
+  height: 20px;
+  line-height: 40px;
+  margin: 20px 0 0 0;
+  color: #666;
+}
+form .form-group label {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+}
+form .form-group input {
+  width: 310px;
+  height: 42px;
+  border-radius: 0;
+  position: relative;
+  margin-top: 20px;
+}
+form .form-group .yzmtitle {
+  display: inline-block;
+}
+form .form-group .yzmbox {
+  display: flex;
+}
+form .form-group .yzmbox .yzm {
+  display: inline-block;
+  width: 127px;
+  margin-top: 0 !important;
+}
+form .form-group .yzmbox .yzmimg {
+  display: inline-block;
+  width: 85px;
+  height: 42px;
+  margin: 0 10px;
+}
+form .form-group .yzmbox .huan {
+  height: 30px;
+  line-height: 20px;
+  margin: 0px 0 0 12px;
+  color: #666;
+  display: flex;
+  text-decoration: none;
+}
+form .form-group .yzmbox .huan .huantext {
+  margin-left: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*# sourceMappingURL=login.css.map */

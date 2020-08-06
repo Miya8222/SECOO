@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品列表页</title>
+    <script src="./script/require.js" defer async="true" data-main="./script/main.js" id="currentpage" current="listpage"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/listpage.css">
+</head>
+
+<body>
+    <!-- 引入公共部分header -->
+    <div id="public-header"></div>
+    <script>
+        $("#public-header").load("./header.html");
+    </script>
+
+    <!-- 商品列表 -->
+    <div class="product-box container">
+        <!-- 商品/拍卖切换tab -->
+        <a href="javascript:;" class="on" onclick="analytical('列表','列表_商城');">商城</a>
+        <a href="javascript:;">拍卖</a>
+    </div>
+    <!-- 商品筛选条件 先不写 后边补充-->
+    <!-- <div class="sail-warp"> -->
+
+    <!-- 商品渲染页 -->
+    <div class="product-list container"></div>
+
+    <!-- 引入公共部分footer -->
+    <div id="public-footer"></div>
+    <script>
+        $("#public-footer").load("./footer.html");
+    </script>
+</body>
+
+</html>

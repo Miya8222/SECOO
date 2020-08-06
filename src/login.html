@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寺库登录页面</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="../src/css/jquery.idcode.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/register.css">
+    <link rel="stylesheet" href="../src/css/login.css">
+</head>
+
+<body>
+    <!-- 注册页头部导航 -->
+    <div class="header">
+        <div class="container">
+            <div class="pull-left">
+                <img src="./imgs/reg-logo.png" alt="">
+            </div>
+            <ul class="pull-right">
+                <li>
+                    <a href="">寺库首页</a>
+                </li>
+                <li>
+                    <a href="">寺库收藏</a>
+                </li>
+                <li>
+                    <a href="">寺库APP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 右侧注册表单 -->
+
+    <div class="regbox">
+        <form class="pull-right form" method="post">
+            <!-- 扫码登录部分 -->
+            <!-- tab栏 -->
+            <div class="login_tab">
+                <div class="active">扫码登录</div>
+                <div>密码登录</div>
+            </div>
+            <!-- 二维码 -->
+            <div class="QRcode" style="display: block;">
+                <div class="erweima col-md-offset-2">
+                    <img src="./imgs/erweima.png" alt="">
+                </div>
+                <div class="saoyisao" style="display: none;">
+                    <img src="./imgs/saoyisao.jpg" alt="">
+                </div>
+                <div class="txt">
+                    打开
+                    <a href="" style="color: #f19108;">寺库APP</a> 扫一扫
+                </div>
+                <div class="register_change">
+                    <span>还不是寺库会员？</span>
+                    <span><a href="http://localhost/www/SECOO/src/register.html" style="color: #f19108;">免费注册</a></span>
+                </div>
+            </div>
+            <!-- 密码登录 -->
+            <div class="pass_login" style="display: none;">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="请输入用户名">
+                    <i class="glyphicon glyphicon-user"></i>
+                    <span class="wrong usererr pull-left"></span>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="password" name="password" placeholder="请输入密码">
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <span class="wrong againerr pull-left"></span>
+                </div>
+                <div class="form-group yzmmargin">
+                    <label for="yzm" class="yzmtitle">验证码</label>
+                    <span class="wrong yzmerr pull-right"></span>
+                    <div class="yzmbox">
+                        <!-- 验证码输入框 -->
+                        <input type="text" class="form-control yzm" id="yzm" name="yzm">
+                        <a class="huan" href="#">
+                            <div id="idcode"></div>
+                            <div class="huantext" style="color: #f19108;">换一换</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="remember">
+                    <input type="checkbox">
+                    <span>记住账号</span>
+
+                </div>
+                <input type="button" name="submit" class="btn submit btn-default" value="登录"></input>
+                <div class="login_change">
+                    <span>还不是寺库会员？</span>
+                    <a href="http://localhost/www/SECOO/src/register.html">免费注册</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./script/jquery.idcode.js"></script>
+<script src="./script/login.js"></script>
+
+</html>

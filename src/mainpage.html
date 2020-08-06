@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOO首页</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/require.js" defer async="true" data-main="./script/main.js" id="currentpage" current="mainpage"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/mainpage.css">
+</head>
+
+<body>
+    <!-- 引入公共部分header -->
+    <div id="public-header"></div>
+    <script>
+        $("#public-header").load("./header.html");
+    </script>
+
+    <!-- banner -->
+    <div class="banner container">
+        <!-- secoo-trend left -->
+        <div class="secoo-trend">
+            <a href="http://www.secoo.com/listTop/2019-1111.shtml">
+                <div class="top-img">
+                    <img src="./imgs/banner1.png">
+                    <div class="bg-mask"></div>
+                </div>
+                <div class="bottom-img">
+                    <img src="./imgs/banner2.png">
+                </div>
+            </a>
+        </div>
+
+        <!-- international-brands right -->
+        <div class="international-brands zh full-right">
+            <a href="http://www.secoo.com/listTop/ka.shtml">
+                <div class="left-img">
+                    <img src="./imgs/banner3.png">
+                </div>
+                <div class="right-img">
+                    <div class="bg-mask"></div>
+                    <img src="./imgs/banner4.jpg">
+                </div>
+            </a>
+        </div>
+        <!-- banner-video -->
+        <div class="banner-video">
+            <div class="bg-poster">
+                <img src="./imgs/banner6.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- 轮播板块:editor-pick -->
+    <div class="editor-pick ">
+        <div class="container">
+            <h3 class="title"></h3>
+            <!-- 轮播的全部板块 -->
+            <div class="editor-pick-list">
+                <ul class="product-list">
+
+                </ul>
+            </div>
+        </div>
+        <!-- 轮播底部的按钮:editor-pink-btn -->
+        <div class="bottom-dir">
+            <div class="container">
+                <a class="prev" href="javascript:;">
+                    <i class="glyphicon glyphicon-chevron-left"></i>
+                </a>
+                <a class="next" href="javascript:;">
+                    <i class="glyphicon glyphicon-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- fashion-wardrobe -->
+    <div class="fashion-wardrobe container">
+        <div class="container">
+            <div class="left-img" style="display: inline;">
+                <img class="lazyPic" src="./imgs/fashion1.jpg">
+            </div>
+            <div class="right-img" style="display: inline;">
+                <img class="lazyPic" src="./imgs/fashion2.png">
+            </div>
+        </div>
+    </div>
+
+    <!-- secoo-app -->
+    <div class="secoo-app">
+        <div class="container">
+            <img class="zh lazyPic" src="./imgs/phone.jpg" style="display: block;">
+        </div>
+    </div>
+
+    <!-- plate-entry threewrap-->
+    <ul class="plate-entry">
+        <div class="container">
+            <li>
+                <div class="bg-mask"></div><img src="./imgs/threewarp1.jpg" style="display: inline;">
+            </li>
+            <li>
+                <div class="bg-mask"></div><img src="./imgs/threewrap2.jpg" style="display: inline;">
+            </li>
+            <li>
+                <div class="bg-mask"></div><img src="./imgs/threewarp3.jpg" style="display: inline;">
+            </li>
+        </div>
+    </ul>
+
+    <!-- world-of-secoo last_warp -->
+    <div class="world-of-secoo">
+        <div class="container">
+            <h3 class="title">
+                <img src="./imgs/title2.png">
+            </h3>
+            <ul>
+                <li>
+                    <div class="bg-mask"></div><img src="./imgs/lastworld1.jpg" style="display: inline;">
+                </li>
+                <li>
+                    <div class="bg-mask"></div><img src="./imgs/lastworld2.jpg" style="display: inline;">
+                </li>
+                <li>
+                    <div class="bg-mask"></div><img src="./imgs/lastworld3.jpg" style="display: inline;">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 引入公共部分footer -->
+    <div id="public-footer"></div>
+    <script>
+        $("#public-footer").load("./footer.html");
+    </script>
+
+</body>
+
+</html>

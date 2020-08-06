@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+#header {
+  background: #fff !important;
+}
+#header .header-con {
+  height: 130px;
+  width: 1200px;
+  font-size: 14px;
+  color: #000;
+}
+#header .header-con .header-left {
+  float: left;
+  margin-top: 62px;
+  cursor: pointer;
+}
+#header .header-con .header-left .language_btn {
+  position: relative;
+  height: 28px;
+  padding-right: 10px;
+  padding-bottom: 3px;
+  line-height: 28px;
+  border-right: 1px solid #ccc;
+}
+#header .header-con .header-left .language_btn i {
+  padding: 0 4px;
+}
+#header .header-con .header-left span {
+  font-family: arial;
+  line-height: 28px;
+  padding-left: 10px;
+}
+#header .header-con .header-logo {
+  width: 189px;
+  height: 75px;
+  margin: 0 auto;
+  padding-top: 29px;
+}
+#header .header-con .customer_info .username {
+  padding-right: 8px;
+  border-right: 1px solid #ccc;
+}
+#header .header-con .customer_info .login-out {
+  margin-left: 8px;
+}
+
+#nav {
+  background-color: #000;
+}
+#nav .nav-con {
+  position: relative;
+  height: 50px;
+}
+#nav .nav-con .nav-menu {
+  display: flex;
+  float: left;
+}
+#nav .nav-con .nav-menu .nav-item a {
+  height: 50px;
+  line-height: 50px;
+  color: #ffb81c;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0 25px;
+}
+#nav .nav-con .nav-menu .nav-item i {
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+}
+#nav .nav-con .nav-menu .nav-item .active {
+  color: #fff;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background: #FFF;
+  display: none;
+  z-index: 15;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold .unfold-list {
+  width: 1200px;
+  background: #fff !important;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold .unfold-list li {
+  margin-left: 35px;
+  float: left;
+  width: 400px;
+  margin-bottom: 20px;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold .unfold-list li:last-child {
+  margin-left: 17px;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold .unfold-list h4 {
+  margin: 25px 0 25px 25px;
+  font-size: 14px;
+  font-weight: 700;
+  display: block;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold .unfold-list a {
+  float: left;
+  width: 200px;
+  height: 40px;
+  font-size: 13px;
+  color: #666666;
+}
+#nav .nav-con .nav-menu .nav-item .nav-unfold .unfold-list > li:last-child {
+  width: 600px;
+  float: left;
+}
+#nav .nav-con .nav-menu .clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+#nav .nav-con .search {
+  float: right;
+  height: 20px;
+  color: #ffb81c;
+  cursor: pointer;
+}
+#nav .nav-con .search .search-con {
+  line-height: 50px;
+}
+#nav .nav-con .search .search-con > input {
+  height: 20px;
+  width: 55px;
+  background-color: #000;
+  color: #ffb81c;
+}
+
+.nfooter {
+  height: 600px;
+  padding-top: 40px;
+  background-color: #ffb81c;
+  font-size: 16px;
+}
+
+.container {
+  width: 1200px;
+}
+
+.zh .nfooter span,
+.zh .nfooter a {
+  font-size: 14px;
+}
+
+.nfooter .footer-links > li {
+  float: left;
+}
+
+.nfooter .service-information {
+  width: 325px;
+}
+
+.nfooter .service-information .links-title,
+.nfooter .our-app .links-title {
+  margin-bottom: 26px;
+}
+
+.nfooter .links-title {
+  font-size: 16px;
+}
+
+.nfooter .links-item.zh {
+  height: 33px;
+}
+
+.nfooter .service-information .links-item.zh {
+  float: left;
+  width: 140px;
+}
+
+.nfooter a {
+  color: #000;
+  font-size: 16px;
+}
+
+.nfooter a:hover {
+  text-decoration: underline;
+}
+
+.nfooter .public-media {
+  text-align: center;
+}
+
+.nfooter .footer-logo {
+  position: relative;
+  width: 550px;
+  height: 240px;
+  background: url("../imgs/footer-logo.png") no-repeat 100%;
+}
+
+.nfooter .footer-logo .weibo,
+.nfooter .footer-logo .wechat {
+  position: absolute;
+  top: 107px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.nfooter .footer-logo .weibo {
+  left: 91px;
+}
+
+.nfooter .footer-logo .wechat {
+  left: 394px;
+}
+
+.nfooter .footer-logo .weibo .icon-weibo,
+.nfooter .footer-logo .wechat .icon-wechat {
+  float: left;
+  /* width: 25px; */
+  /* height: 20px; */
+  font-size: 24px;
+  margin-right: 5px;
+  margin-top: -5px;
+  /* background: url('//mpic.secooimg.com/images/2018/11/06/spirits.png') no-repeat -70px -2px; */
+}
+
+.nfooter .footer-logo .weibo span {
+  float: left;
+}
+
+.nfooter .qr-code-p {
+  position: relative;
+}
+
+.nfooter .qr-code {
+  position: absolute;
+  left: -133px;
+  top: -50px;
+  width: 126px;
+  height: 120px;
+  display: none;
+}
+
+.nfooter .qr-code-p:hover .qr-code {
+  display: block;
+}
+
+.nfooter .qr-code img {
+  width: 100%;
+  height: 100%;
+}
+
+.nfooter .footer-logo > div:hover span {
+  text-decoration: underline;
+}
+
+.nfooter .our-app {
+  margin-left: 207px;
+}
+
+.nfooter .footer-info {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.nfooter .footer-info a,
+.nfooter .footer-info span {
+  font-size: 14px;
+}
+
+.nfooter .footer-info p {
+  margin-bottom: 20px;
+}
+
+.nfooter .footer-info span {
+  margin-right: 30px;
+}
+
+.nfooter .footer-info span:last-child {
+  margin-right: 0;
+}
+
+.nfooter .footer-info .footer-info-imgs a {
+  float: left;
+  width: 108px;
+  height: 40px;
+  margin-right: 30px;
+}
+
+.nfooter .footer-info .footer-info-imgs img {
+  width: 100%;
+  height: 100%;
+}
+
+.fixed-qrcode {
+  position: fixed;
+  left: 50%;
+  bottom: 15px;
+  margin-left: -732px;
+  width: 120px;
+  height: 164px;
+  z-index: 100;
+  display: none;
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1500px) {
+  .fixed-qrcode {
+    margin-left: -600px;
+    bottom: 125px;
+  }
+}
+.fixed-qrcode img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=public.css.map */

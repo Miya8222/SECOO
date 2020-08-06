@@ -1,0 +1,214 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ededed;
+}
+
+.detailbox .info {
+  height: 30px;
+  margin-top: 30px;
+  font-family: "宋体";
+  color: #666;
+}
+.detailbox .product_detail {
+  width: 1200px;
+  height: 560px;
+  margin-top: 80px;
+  background: #fff;
+  padding: 40px 50px 12px 40px;
+  box-shadow: 0 2px 5px #ccc;
+}
+.detailbox .product_detail .info-left {
+  position: relative;
+  margin-bottom: 85px;
+}
+.detailbox .product_detail .info-left .bigger {
+  position: absolute;
+  top: 80px;
+  left: 500px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  z-index: 10;
+}
+.detailbox .product_detail .info-left .bigger img {
+  width: 1200px;
+  height: 1200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.detailbox .product_detail .info-left .small-box {
+  height: 400px;
+  width: 481px;
+  z-index: 2;
+  margin-bottom: 16px;
+  position: relative;
+}
+.detailbox .product_detail .info-left .small-box .small-pic {
+  width: 400px;
+  height: 398px;
+  float: right;
+  position: relative;
+}
+.detailbox .product_detail .info-left .small-box .small-pic img {
+  width: 100%;
+  height: 100%;
+}
+.detailbox .product_detail .info-left .small-box .small-pic #wavepoint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../imgs/webp.webp);
+  background-repeat: repeat;
+  background-size: 80%;
+  z-index: 10;
+  display: none;
+}
+.detailbox .product_detail .info-left .small-box .show-pic {
+  width: 80px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.detailbox .product_detail .info-left .small-box .show-pic span {
+  display: block;
+  width: 80px;
+  height: 80px;
+}
+.detailbox .product_detail .info-left .small-box .show-pic span img {
+  width: 100%;
+  height: 100%;
+}
+.detailbox .product_detail .info-left .small-box .show-pic span:hover {
+  cursor: pointer;
+  background-image: url(../imgs/detail_icon.png);
+}
+.detailbox .product_detail .info-left .other li {
+  float: left;
+  margin: 0 10px;
+  font-size: 14px;
+}
+.detailbox .product_detail .info-left .other li i {
+  padding: 0 4px;
+  color: #7f69b3;
+}
+.detailbox .product_detail .info-right {
+  float: right;
+  width: 597px;
+  min-height: 400px;
+  overflow: hidden;
+}
+.detailbox .product_detail .info-right .product-name {
+  padding: 0 0 20px 20px;
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  font-family: PingFangSC-Regular, Microsoft YaHei, tahoma, arial, Hiragino Sans GB;
+  font-size: 12px;
+  border-bottom: 1px dashed #7f69b3;
+}
+.detailbox .product_detail .info-right .product-name h2 {
+  font: normal 16px/24px "microsoft yahei";
+  color: #323232;
+}
+.detailbox .product_detail .info-right .product-price {
+  padding: 15px 0 10px 20px;
+  color: #666666;
+  position: relative;
+  z-index: 4;
+  border-bottom: 1px dashed #7f69b3;
+}
+.detailbox .product_detail .info-right .product-price .pro_price {
+  margin-bottom: 8px;
+}
+.detailbox .product_detail .info-right .product-price .pro_price span:first-child {
+  font-size: 18px;
+  font-family: microsoft yahei;
+  color: #e93b39 !important;
+}
+.detailbox .product_detail .info-right .product-price .pro_price span:last-child {
+  font-size: 30px;
+  font-weight: 500;
+  color: #e93a38;
+  vertical-align: -6px;
+  display: inline-block;
+  line-height: 28px;
+  font-family: Tahoma;
+}
+.detailbox .product_detail .info-right .num-box .color .color-txt {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #605f5f;
+  margin-top: 34px;
+  margin-left: 16px;
+  float: left;
+}
+.detailbox .product_detail .info-right .num-box .color .color1 {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e8e8e8;
+  float: left;
+  margin-top: 16px;
+  margin-left: 30px;
+}
+.detailbox .product_detail .info-right .num-box .color .color1 img {
+  width: 100%;
+  height: 100%;
+}
+.detailbox .product_detail .info-right .num-box .color .color2 {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: 16px;
+  margin-left: 20px;
+  border: 1px solid #e8e8e8;
+}
+.detailbox .product_detail .info-right .num-box .color .color2 img {
+  width: 100%;
+  height: 100%;
+}
+.detailbox .product_detail .info-right .num-box .num {
+  width: 554px;
+  height: 100px;
+  overflow: hidden;
+}
+.detailbox .product_detail .info-right .num-box .num .num-txt {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #605f5f;
+  line-height: 100px;
+  margin-left: 16px;
+  float: left;
+}
+.detailbox .product_detail .info-right .num-box .num .num-left {
+  float: left;
+  margin-top: 34px;
+  margin-left: 30px;
+}
+.detailbox .product_detail .info-right .num-box .num form input {
+  height: 32px;
+  width: 60px;
+  margin-top: 34px;
+  border: 1px solid #dddddd;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+}
+.detailbox .product_detail .info-right .num-box .num .num-right img {
+  float: left;
+  margin-top: 34px;
+}
+.detailbox .product_detail .info-right .num-box .btn-liji {
+  margin: 0 16px;
+  float: left;
+}
+.detailbox .product_detail .info-right .num-box .btn-right {
+  float: left;
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=detailpage.css.map */

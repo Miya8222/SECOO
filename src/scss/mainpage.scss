@@ -1,0 +1,361 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin-top: 20px;
+    width: 1200px;
+    // margin: auto;
+    // secoo-trend left
+    .secoo-trend {
+        width: 520px;
+        height: 900px;
+        float: left;
+        position: relative;
+        .top-img {
+            height: 790px;
+            top: 0;
+            z-index: 1;
+        }
+        .bottom-img {
+            bottom: 0;
+            z-index: 2;
+            img {
+                vertical-align: middle;
+                border: 0;
+            }
+        }
+        .top-img,
+        .bottom-img {
+            position: absolute;
+            left: 0;
+            width: 100%;
+        }
+    }
+    // international-brands right
+    .international-brands {
+        position: relative;
+        float: right;
+        width: 650px;
+        height: 410px;
+        a {
+            text-decoration: none;
+            color: #666;
+            .left-img,
+            .right-img {
+                position: absolute;
+                top: 0;
+                height: 100%;
+            }
+            .left-img {
+                left: 0;
+                z-index: 2;
+                img {
+                    vertical-align: middle;
+                    border: 0;
+                }
+            }
+            .right-img {
+                z-index: 1;
+                right: 0;
+                .bg-mask {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.2);
+                    opacity: 0;
+                    -webkit-transition: opacity linear 0.2s;
+                    -o-transition: opacity linear 0.2s;
+                    transition: opacity linear 0.2s;
+                }
+            }
+        }
+    }
+}
+
+// 轮播板块:editor-pick
+.editor-pick {
+    margin-top: 60px;
+    // 版心
+    .container {
+        width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+        // margin: 54px auto 42px ;
+        // 标题分割：editor-pick
+        .title {
+            width: 100%;
+            height: 38px;
+            margin-bottom: 40px;
+            background: url('../imgs/title1.png') no-repeat center/266px 38px, url('../imgs/title-line.png') no-repeat bottom;
+        }
+        // 轮播的全部板块
+        .editor-pick-list {
+            position: relative;
+            height: 400px;
+            overflow: hidden;
+            ul {
+                width: 10000px;
+                position: absolute;
+                list-style: none;
+                // 每一个可点击的单独轮播部分
+                li {
+                    list-style: none;
+                    float: left;
+                    width: 230px;
+                    height: 400px;
+                    margin-right: 10px;
+                    -webkit-transition: -webkit-transform linear 0.2s;
+                    transition: -webkit-transform linear 0.2s;
+                    -o-transition: transform linear 0.2s;
+                    transition: transform linear 0.2s;
+                    transition: transform linear 0.2s, -webkit-transform linear 0.2s;
+                    background-color: #f5f5f5;
+                    a {
+                        text-decoration: none;
+                    }
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                    &:hover {
+                        border-bottom: 10px solid #ffb81c;
+                        -webkit-transform: translateY(-10px);
+                        -ms-transform: tranylateY(-10px);
+                        transform: translateY(-10px);
+                    }
+                    &:hover p {
+                        color: #ffb81c;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .product-img {
+                position: relative;
+                width: 100%;
+                height: 232px;
+                /* margin-bottom: 34px; */
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    .mask {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        opacity: 0.3;
+                    }
+                }
+            }
+            .product-details {
+                padding: 34px 27px 0;
+            }
+            .product-details p {
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                color: #000;
+            }
+            .product-name {
+                height: 28px;
+                font-size: 18px;
+                font-family: 'CASLON224STD-BOOKITALIC';
+            }
+            .product-desc {
+                height: 26px;
+                /* margin-bottom: 30px; */
+                font-size: 12px;
+            }
+            .line {
+                width: 80px;
+                height: 2px;
+                margin-bottom: 18px;
+                background-color: #000;
+            }
+            .product-price {
+                font-family: 'FuturaLT-Light';
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// 轮播底部的按钮:editor-pink-btn
+.bottom-dir {
+    margin-top: 30px;
+    .container {
+        width: 1200px;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+        // width: 100%;
+        height: 57px;
+        background: url('../imgs/title-btn.png') no-repeat center/128px 57px, url('../imgs/title-line.png') no-repeat 100%/100%;
+        .prev,
+        .next {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 60px;
+            height: 100%;
+        }
+        .prev {
+            margin-left: -64px;
+            .glyphicon-chevron-left {
+                position: absolute;
+                left: 15px;
+                top: 17px;
+                font-size: 21px;
+                color: #000;
+                &:hover {
+                    color: #777;
+                }
+                &:hover .glyphicon-chevron-left {
+                    background-position: -26px -40px;
+                }
+            }
+        }
+        .next {
+            margin-left: 4px;
+            .glyphicon-chevron-right {
+                position: absolute;
+                left: 15px;
+                top: 17px;
+                font-size: 21px;
+                &:hover {
+                    color: #777;
+                }
+            }
+            .glyphicon-chevron-right {
+                left: 23px;
+            }
+            &:hover .glyphicon-chevron-right {
+                background-position: -54px -40px;
+            }
+        }
+    }
+}
+
+// fashion-wardrode
+.fashion-wardrobe {
+    margin-top: 60px;
+    .container {
+        position: relative;
+        height: 630px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        .left-img,
+        right-img {
+            height: 100%;
+        }
+        .left-img .lazyPic {
+            left: 0;
+        }
+        .right-img .lazyPic {
+            right: 0;
+            z-index: 3;
+        }
+        img {
+            position: absolute;
+            height: 100%;
+        }
+    }
+}
+
+// secoo-app
+.secoo-app {
+    .container {
+        width: 1200px;
+        height: 300px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// plate-entry threewrap
+.plate-entry {
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+        width: 1200px;
+        margin-bottom: 40px;
+        list-style: none;
+    }
+    li {
+        list-style: none;
+        position: relative;
+        float: left;
+        width: 380px;
+        height: 600px;
+        margin-right: 30px;
+        &:hover .bg-mask {
+            opacity: 1;
+        }
+        .bg-mask {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            -webkit-transition: opacity linear 0.2s;
+            -o-transition: opacity linear 0.2s;
+            transition: opacity linear 0.2s;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+// world-of-secoo last_warp
+.world-of-secoo {
+    padding-top: 60px;
+    background-color: #ffb81c;
+    list-style: none;
+    .container {
+        width: 1200px;
+        padding: 0;
+    }
+    .title {
+        height: 109px;
+        margin-bottom: 51px;
+        text-align: center;
+    }
+    li {
+        list-style: none;
+        position: relative;
+        float: left;
+        width: 380px;
+        height: 504px;
+        margin-right: 30px;
+        &:hover .bg-mask {
+            opacity: 1;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}

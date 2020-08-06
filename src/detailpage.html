@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情页</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/require.js" defer async="true" data-main="./script/main.js" id="currentpage" current="detailpage"></script>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/detailpage.css">
+
+</head>
+
+<body>
+    <!-- 引入公共部分header -->
+    <div id="public-header"></div>
+    <script>
+        $("#public-header").load("./header.html");
+    </script>
+
+    <!-- 购物车板块 -->
+    <div class="detailbox container">
+        <span class="info pull-right">商品编码：391381921</span>
+        <!-- 商品信息展示区域 -->
+        <div class="product_detail">
+            <!-- 左侧区域 -->
+            <div class="info-left pull-left">
+
+                <!-- 放大镜展示区域 -->
+                <div class="bigger">
+                    <!-- 放大镜大图 -->
+                    <img src="" alt="">
+                </div>
+                <div class="small-box">
+                    <!-- 小图展示区域 -->
+                    <div class="small-pic">
+                        <img src="" alt="">
+                        <!-- 波点小放大镜 -->
+                        <div id="wavepoint">
+                        </div>
+                    </div>
+
+                    <!-- 左侧五张展示小图 -->
+                    <div class="show-pic">
+                        <span class="pic1 pic-l">
+                        <img src="" alt="">
+                        </span>
+                        <span class="pic2 pic-l">
+                            <img src="" alt="">
+                        </span>
+                        <span class="pic3 pic-l">
+                            <img src="" alt="">
+                        </span>
+                        <span class="pic4 pic-l">
+                            <img src="" alt="">
+                        </span>
+                        <span class="pic5 pic-l">
+                            <img src="" alt="">
+                        </span>
+                    </div>
+                </div>
+                <ul class="other">
+                    <li>
+                        <i class="glyphicon glyphicon-tags"></i>正品保障
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-wrench"></i>七天退化
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-thumbs-up"></i>权威质检
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-link"></i>分享
+                    </li>
+                    <li>
+                        <i class="glyphicon glyphicon-heart-empty"></i>收藏商品
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- 右侧区域 -->
+            <div class="info-right">
+                <!-- 产品名称 -->
+                <div class="product-name">
+                    <h2></h2>
+                </div>
+                <!-- 产品价格 -->
+                <div class="product-price">
+                    <div class="pro_price">
+                        <span>一口价</span>
+                        <span class="price"></span>
+                    </div>
+                    <div class="num">
+                        <span>有货</span>
+                        <span>预计下单后会在8-15天发货</span>
+                    </div>
+                    <div class="info">
+                        <span>商品信息</span>
+                        <span>自营</span>
+                    </div>
+                </div>
+                <!-- 购买数量 -->
+                <div class="num-box">
+                    <div class="color">
+                        <p class="color-txt">颜色</p>
+                        <div class="color1"><img src=""></div>
+                        <div class="color2"><img src=""></div>
+                    </div>
+                    <div class="num">
+                        <p class="num-txt">数量</p>
+                        <div class="num-left"><img src="./imgs/jian.png"></div>
+                        <form><input class="input" value="1"></form>
+                        <div class="num-right"><img src="./imgs/jia.png"></div>
+                    </div>
+                    <div class="btn-liji">
+                        <a href="http://localhost/www/SECOO/src/shoppingcart.html"><img src="./imgs/lijiqianggou.png"></a>
+                    </div>
+                    <div class="btn-jiaru">
+                        <a href="#"><img src="./imgs/jiarugouwuche.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="./script/detailpage.js"></script>
+
+</html>

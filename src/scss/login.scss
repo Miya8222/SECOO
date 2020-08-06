@@ -1,0 +1,141 @@
+@charset "utf-8";
+form {
+    height: 460px;
+    width: 380px;
+    // padding: 0 40px;
+    // 二维码tab
+    .login_tab {
+        position: relative;
+        z-index: 10;
+        div {
+            margin: auto;
+            float: left;
+            width: 50%;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            font: normal 18px/20px microsoft yahei;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .active {
+            color: #f19108;
+        }
+    }
+    // 二维码登录内容
+    .QRcode {
+        .erweima {
+            width: 192px;
+            height: 192px;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        // 打开寺库APP扫一扫
+        .txt {
+            font-size: 14px;
+            font-weight: bold;
+            color: #000;
+            text-align: center;
+            margin-top: 90px;
+        }
+        .register_change {
+            margin: 30px 0 20px 0;
+            color: #999;
+            font-size: 12px;
+            text-align: center;
+            font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+        }
+    }
+    // 密码登录
+    .form-group {
+        position: relative;
+        font-size: 14px;
+        // height: 40px!important;
+        // background: pink;
+        padding-top: 20px!important;
+        margin-bottom: 20px!important;
+        .glyphicon-user {
+            display: block;
+            position: absolute;
+            top: 75px;
+            right: 20px;
+        }
+        .glyphicon-phone {
+            display: block;
+            position: absolute;
+            top: 50px;
+            right: 20px;
+        }
+        .remember {
+            font-size: 14px;
+            padding-top: 20px;
+            span {
+                height: 20px;
+                line-height: 40px;
+                margin: 20px 0 0 0;
+                color: #666;
+            }
+        }
+        label {
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            color: #666;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-family: tahoma, arial, \5b8b\4f53, sans-serif;
+        }
+        input {
+            width: 310px;
+            height: 42px;
+            border-radius: 0;
+            position: relative;
+            margin-top: 20px;
+        }
+        // .wrong {
+        //     height: 30px;
+        //     font-size: 10px;
+        //     line-height: 20px!important;
+        //     color: #be002f;
+        //     // margin-bottom: 30px;
+        //     // z-index: 50;
+        // }
+        // 验证码标题
+        .yzmtitle {
+            display: inline-block;
+            // margin-top: 20px;
+        }
+        .yzmbox {
+            display: flex;
+            // 验证码输入框
+            .yzm {
+                display: inline-block;
+                width: 127px;
+                margin-top: 0!important;
+            }
+            // 验证码图片
+            .yzmimg {
+                display: inline-block;
+                width: 85px;
+                height: 42px;
+                margin: 0 10px;
+            }
+            .huan {
+                height: 30px;
+                line-height: 20px;
+                margin: 0px 0 0 12px;
+                color: #666;
+                display: flex;
+                text-decoration: none;
+                .huantext {
+                    margin-left: 10px;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #ededed;
+}
+
+// 购物车板块
+.detailbox {
+    // 商品信息一栏
+    .info {
+        height: 30px;
+        margin-top: 30px;
+        font-family: "宋体";
+        color: #666;
+    }
+    // 商品详细介绍区域
+    .product_detail {
+        width: 1200px;
+        height: 560px;
+        margin-top: 80px;
+        background: #fff;
+        padding: 40px 50px 12px 40px;
+        box-shadow: 0 2px 5px #ccc;
+        // 左侧区域
+        .info-left {
+            // 图片展示区域
+            position: relative;
+            // 大图
+            .bigger {
+                position: absolute;
+                top: 80px;
+                left: 500px;
+                overflow: hidden;
+                width: 400px;
+                height: 400px;
+                z-index: 10;
+                img {
+                    width: 1200px;
+                    height: 1200px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .small-box {
+                height: 400px;
+                width: 481px;
+                z-index: 2;
+                margin-bottom: 16px;
+                position: relative;
+                // 小图
+                .small-pic {
+                    width: 400px;
+                    height: 398px;
+                    float: right;
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    // 波点显示框
+                    #wavepoint {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: url(../imgs/webp.webp);
+                        background-repeat: repeat;
+                        background-size: 80%;
+                        z-index: 10;
+                        display: none;
+                    }
+                }
+                // 小图左侧的商品图列表
+                .show-pic {
+                    width: 80px;
+                    height: 400px;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    // 区域里的每一个小框
+                    span {
+                        display: block;
+                        width: 80px;
+                        height: 80px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        &:hover {
+                            cursor: pointer;
+                            background-image: url(../imgs/detail_icon.png);
+                        }
+                    }
+                }
+            }
+            // 其他区域
+            .other {
+                li {
+                    float: left;
+                    margin: 0 10px;
+                    font-size: 14px;
+                    i {
+                        padding: 0 4px;
+                        color: #7f69b3;
+                    }
+                }
+            }
+            margin-bottom: 85px;
+        }
+        // 右侧区域
+        .info-right {
+            float: right;
+            width: 597px;
+            min-height: 400px;
+            overflow: hidden;
+            // 产品名称
+            .product-name {
+                padding: 0 0 20px 20px;
+                background-position: 0 bottom;
+                background-repeat: repeat-x;
+                font-family: PingFangSC-Regular, Microsoft YaHei, tahoma, arial, Hiragino Sans GB;
+                font-size: 12px;
+                border-bottom: 1px dashed #7f69b3;
+                h2 {
+                    font: normal 16px/24px "microsoft yahei";
+                    color: #323232;
+                }
+            }
+            // 产品价格
+            .product-price {
+                padding: 15px 0 10px 20px;
+                color: #666666;
+                position: relative;
+                z-index: 4;
+                border-bottom: 1px dashed #7f69b3;
+                .pro_price {
+                    span {
+                        &:first-child {
+                            font-size: 18px;
+                            font-family: microsoft yahei;
+                            color: #e93b39!important;
+                        }
+                        &:last-child {
+                            font-size: 30px;
+                            font-weight: 500;
+                            color: #e93a38;
+                            vertical-align: -6px;
+                            display: inline-block;
+                            line-height: 28px;
+                            font-family: Tahoma;
+                        }
+                    }
+                    margin-bottom: 8px;
+                }
+            }
+            // 购买数量
+            .num-box {
+                // 商品颜色选择
+                .color {
+                    // 颜色描述文字
+                    .color-txt {
+                        font-family: "微软雅黑";
+                        font-size: 14px;
+                        color: #605f5f;
+                        margin-top: 34px;
+                        margin-left: 16px;
+                        float: left;
+                    }
+                    // 颜色1
+                    .color1 {
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid #e8e8e8;
+                        float: left;
+                        margin-top: 16px;
+                        margin-left: 30px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    // 颜色2
+                    .color2 {
+                        width: 50px;
+                        height: 50px;
+                        float: left;
+                        margin-top: 16px;
+                        margin-left: 20px;
+                        border: 1px solid #e8e8e8;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                // 商品数量选择
+                .num {
+                    width: 554px;
+                    height: 100px;
+                    overflow: hidden;
+                    // 标题：数量
+                    .num-txt {
+                        font-family: "微软雅黑";
+                        font-size: 14px;
+                        color: #605f5f;
+                        line-height: 100px;
+                        margin-left: 16px;
+                        float: left;
+                    }
+                    // 左侧：-
+                    .num-left {
+                        float: left;
+                        margin-top: 34px;
+                        margin-left: 30px;
+                    }
+                    // 中间：输入
+                    form {
+                        input {
+                            height: 32px;
+                            width: 60px;
+                            margin-top: 34px;
+                            border: 1px solid #dddddd;
+                            line-height: 30px;
+                            text-align: center;
+                            float: left;
+                        }
+                    }
+                    // 右侧：+
+                    .num-right {
+                        img {
+                            float: left;
+                            margin-top: 34px;
+                        }
+                    }
+                }
+                // 加入购物车和立即抢购
+                .btn-liji {
+                    margin: 0 16px;
+                    float: left;
+                }
+                .btn-right {
+                    float: left;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
